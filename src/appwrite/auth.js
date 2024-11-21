@@ -49,4 +49,15 @@ export class AuthService {
 
         return null;
     }
+
+    async logOut()
+    {
+         try{
+            return this.account.deleteSessions();
+         }
+         catch(error )
+         {
+
+         }
+    }
 }
